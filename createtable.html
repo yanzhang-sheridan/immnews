@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <table  width=30%  align=left border=1 id="tbVisitors">
+			       	<caption>visitors static</caption>
+				          <tr>
+				            <td align=left valign=center><b>Month</b>
+				            </td>
+				            <td align=right valign=center><b>Numbers</b></td>
+				          </tr>
+					  </table>
+	          	            <p>&nbsp;</p>
+	      <script>
+          var siteVisitors  = [
+            {
+                "month": "June",
+                "visitors": "2001"
+            },
+            {
+                "month": "July",
+                "Bird_Name": "2300"
+            },
+             {
+                "month": "August",
+                "visitors": "2428"
+            },
+            {
+                "month": "September",
+                "visitors": "2286"
+            },
+           {
+                "month": "October",
+                "visitors": "2784"
+            },
+            {
+                "month": "November",
+                "visitors": "3200"
+            }
+      ];
+      var tbVisitors = document.getElementById("tbVisitors");
+      for (var i = 0; i < siteVisitors.length; i++) {
+         var newTr = document.createElement("tr");
+         var newTd =  document.createElement("td");
+         alert(newTr);
+         alert(newTd);
+         var tdText = document.createTextNode(siteVisitors[i].month);
+         //alert(siteVisitors[i].month);
+         newTd.innerHTML=siteVisitors[i].month;
+         newTd.setAttribute("align","left");
+         newTr.appendChild("newTd");
+        var newTd2 =  document.createElement("td");
+        var tdText2 = document.createTextNode(siteVisitors[i].visitors);
+        newTd2.setAttribute("align","right");
+        newTr.appendChild("newTd2");
+      	tbVisitors.appendChild("newTr");
+     }
+         
+
+
+
+
+                //  this one works well
+
+                // for (var i=0; i< siteVisitors.length;i++) {
+
+                //     var x = document.getElementById('tbVisitors').insertRow(0);
+                //     var y = x.insertCell(0);
+                //     var z = x.insertCell(1);
+                //     y.innerHTML = siteVisitors[i]["month"];
+                //     z.innerHTML =siteVisitors[i]["visitors"];
+
+                // }
+
+
+    </script>
+</body>
+</html>

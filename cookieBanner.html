@@ -1,0 +1,129 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>cookie banner</title>
+	<link rel="stylesheet" type="text/css" href="css\main_new.css">
+
+	<style>
+
+		div{
+			padding: 5px 0;
+			text-align: center;
+			background: #5cd31b;
+			color: white;
+  		}
+
+  		div {
+
+				background-color: #000;
+				height: 100%;
+				width: 100%; 
+				display: none; 
+				position: fixed; 
+				left: 0px; 
+				: 0px; 
+				z-index: 2999;
+				
+
+			}
+
+  		span {
+			color: white;
+			padding-top: 12px;
+			cursor: pointer;
+			padding-right: 15px;
+		}
+
+
+
+  	</style>		 
+	
+</head>
+<body>
+	
+		<div>
+			<span>Our site uses cookies so that we can remember you and understand how you use our site. If you do not agree with our use of cookies, please change the current settings in the Cookie Consent Tool. You can also read more about cookies and similar technologies here. Otherwise, you agree to the use of the cookies as they are currently set..</span>
+	
+
+			<button classs="btn" onclick="changeFooter();" value="ACCET"></button>
+			<button classs="btn" onclick="window.close();" value="REVOKE"></button>
+		
+	
+
+		</div>
+	
+<!-- 
+<!DOCTYPE HTML>
+<html>    
+	<head>
+
+		<style>
+
+			body
+
+			div {
+
+				background-color: #000;
+				height: 100%;
+				width: 100%; 
+				display: none; 
+				position: fixed; 
+				left: 0px; 
+				top: 0px; 
+				z-index: 2999;
+				opacity: 0.5;
+
+			}
+
+		</style>
+
+
+
+		
+
+	</head>
+	<body>
+
+		<p>Our site uses cookies so that we can remember you and understand how you use our site. If you do not agree with our use of cookies, please change the current settings in the Cookie Consent Tool. You can also read more about cookies and similar technologies here. Otherwise, you agree to the use of the cookies as they are currently set.
+
+		<p>
+
+		<button classs="btn" onclick="changeFooter();" value="ACCET"></button>
+		<button classs="btn" onclick="window.close();" value="REVOKE"></button>
+		
+	</body>
+ -->
+	<!-- <script>
+
+		 function openwin(){    
+		  window.open("page.html","","width=200,height=200")    
+		}    
+		function get_cookie(Name){    
+		 var search = Name + "="    
+		 var returnvalue = "";    
+		 if (document.cookie.length > 0) ...{    
+		 offset = document.cookie.indexOf(search)    
+		 if (offset != -1) ...{    
+		 offset += search.length    
+		 end = document.cookie.indexOf(";", offset);    
+		 if (end == -1)    
+		 end = document.cookie.length;    
+		 returnvalue=unescape(document.cookie.substring(offset, end))    
+		}    
+		}    
+		return returnvalue;    
+		}    
+		function loadpopup(){    
+		  if (get_cookie('popped')==''){    
+		    openwin();   
+		    document.cookie="popped=yes" ;   
+		}    
+		}    
+		</script>  
+ -->
+
+	
+
+</html>

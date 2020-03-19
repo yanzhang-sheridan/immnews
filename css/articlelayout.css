@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){ 
+
+	#header img {
+		width:100px;
+		height:100px;
+	
+	}
+
+
+
+
+	h1 { 
+	   font-size: 18px;
+	   } 
+}
+
+@media screen and (max-width: 760px){ 
+	h1 { 
+	   font-size: 18px;
+	   } 
+
+
+
+
+
+
+}
+
+
+
+
+/*.larticleleft{
+    background-color: white; 
+    flex: 1;
+
+}
+.marticle{
+    background-color: white; 
+    flex: 1;    
+}
+.rarticle{
+    background-color: white;
+    flex: 1;
+}
+*/

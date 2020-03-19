@@ -1,0 +1,70 @@
+
+
+
+/*animatedlogo{
+  -webkit-animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    transition: all 5s;
+  }
+}
+
+*/
+
+
+
+
+/*#animatedlogo{
+       position: relative;
+       width: 60px;
+       height: 60px;
+ }*/
+
+
+ #animatedlogo img{
+     width: 60px;
+     height:60px;
+     z-index:2;
+ }
+
+
+ 
+
+
+
+
+  @keyframes living {
+      0%{
+          transform: scale(1);
+          opacity: 0.5;  
+      }
+      50%{
+          transform: scale(1.5);  
+          opacity: 0;  
+      }
+      100%{
+          transform: scale(1);
+          opacity: 0.5;
+      }
+  }
+  #animatedlogo span{
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      left: 0;
+      bottom: 0;
+      top:0;
+      background: #fff;
+      border-radius: 50%;
+      -webkit-animation: living 3s linear infinite;
+      z-index: -1;
+  }
+  #animatedlogo span:nth-child(2){
+      -webkit-animation-delay: 1.5s; 
+  }
